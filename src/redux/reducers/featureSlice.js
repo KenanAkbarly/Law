@@ -1,6 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
-    collapseOpen:''
+    collapseOpen:'',
+    openSidebar:false,
 }
 
 export const featureSlice = createSlice({
@@ -9,10 +10,13 @@ export const featureSlice = createSlice({
     reducers:{
         setCollapseOpen:(state, action)=>{
             state.collapseOpen = state.collapseOpen === action.payload? '': action.payload
+        },
+        setOpenSidebar:(state)=>{
+            state.openSidebar = !state.openSidebar 
         }
     }
 })
 
-export const { setCollapseOpen } = featureSlice.actions
+export const { setCollapseOpen,setOpenSidebar } = featureSlice.actions
 
 export default featureSlice.reducer;
