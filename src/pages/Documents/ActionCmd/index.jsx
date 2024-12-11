@@ -1,8 +1,13 @@
 import React from 'react'
+import Heading from '../../../components/common/Heading'
 
 const index = () => {
   return (
-    <div>Fealiyyet Emrleri</div>
+    <div>
+      <Heading>
+        Fəaliyyət əmrləri
+      </Heading>
+    </div>
   )
 }
 

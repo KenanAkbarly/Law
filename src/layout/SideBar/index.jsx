@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react'
-import Logo from '../../assets/LogoLess.svg?react'
+import React from 'react'
+import Logo from '../../assets/Logo.svg?react'
 import RowArrow from '../../assets/icons/RowArrow.svg?react'
 import { List } from '@mui/material'
 import SideBarItemCollapse from './SideBarItemCollapse'
